@@ -1,0 +1,15 @@
+D:\personal\xam_android\Nav_test\Nav_test\bin\Debug\netstandard2.0\Nav_test.deps.json
+D:\personal\xam_android\Nav_test\Nav_test\bin\Debug\netstandard2.0\Nav_test.dll
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\Nav_test.csprojAssemblyReference.cache
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\DummyPage.xaml.g.cs
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\Nav_test.AssemblyInfoInputs.cache
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\Nav_test.AssemblyInfo.cs
+D:\personal\xam_android\Nav_test\Nav_test\bin\Debug\netstandard2.0\ref\Nav_test.dll
+D:\personal\xam_android\Nav_test\Nav_test\bin\Debug\netstandard2.0\Nav_test.pdb
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\Nav_test.csproj.Fody.CopyLocal.cache
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\XamlC.stamp
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\Nav_test.dll
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\ref\Nav_test.dll
+D:\personal\xam_android\Nav_test\Nav_test\obj\Debug\netstandard2.0\Nav_test.pdb
