@@ -1,4 +1,5 @@
 ﻿using System;
+using ReactiveUI;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,12 @@ namespace Nav_test
         public App() {
             InitializeComponent();
 
-            var abp = new AppBootStrapper();
-            MainPage = abp.CreateMainPage();
+            RxApp.SuspensionHost.CreateNewAppState = () => new AppBootStrapper();
+            RxApp.SuspensionHost.SetupDefaultSuspendResume();
+
+            MainPage = RxApp.SuspensionHost
+                        .GetAppState<AppBootStrapper>()
+                        .CreateMainPage();
         }
 
         protected override void OnStart() {
