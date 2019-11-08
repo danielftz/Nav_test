@@ -10,12 +10,8 @@ namespace Nav_test
         public App() {
             InitializeComponent();
 
-            RxApp.SuspensionHost.CreateNewAppState = () => new AppBootStrapper();
-            RxApp.SuspensionHost.SetupDefaultSuspendResume();
-
-            MainPage = RxApp.SuspensionHost
-                        .GetAppState<AppBootStrapper>()
-                        .CreateMainPage();
+            var abp = new AppBootStrapper();
+            MainPage = abp.CreateMainPage();
         }
 
         protected override void OnStart() {
