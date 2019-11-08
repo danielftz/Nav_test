@@ -13,14 +13,13 @@ namespace Nav_test
 
         public IScreen HostScreen { get; set; }
 
-        public ReactiveCommand<Unit, Unit> NextPage { get; private set; }
+        public ICommand NextPage { get; private set; }
 
         public MainPageViewModel(IScreen hostScreen) {
             HostScreen = hostScreen;
-            this.NextPage = ReactiveCommand.CreateFromObservable<Unit, Unit>(
-                _ => {
+            this.NextPage = ReactiveCommand.Create(
+                () => {
                     HostScreen.Router.Navigate.Execute(new DummyPageViewModel(hostScreen)).Subscribe();
-                    return Observable.Return(Unit.Default);
                 }
             );
             

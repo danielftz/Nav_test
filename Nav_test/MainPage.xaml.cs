@@ -13,8 +13,6 @@ namespace Nav_test
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage , IViewFor<MainPageViewModel>
     {
-        readonly CompositeDisposable _bindingsDisposable = new CompositeDisposable();
-
         public MainPage() {
             InitializeComponent();
         }
@@ -22,13 +20,7 @@ namespace Nav_test
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            this.BindCommand(ViewModel, vm => vm.NextPage, v => v.Next).DisposeWith(_bindingsDisposable);
-        }
-
-        protected override void OnDisappearing()
-        {
-            base.OnDisappearing();
-            _bindingsDisposable.Clear();
+            BindingContext = ViewModel;
         }
 
         public MainPageViewModel ViewModel { get; set; }
