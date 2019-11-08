@@ -11,7 +11,7 @@
         <Label Text="This is the main page" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        <Button Text="next" Command="{Binding NextPage}"/>
+        <Button x:Name="Next" Text="next"/>
     </StackLayout>
 
 </ContentPage>
